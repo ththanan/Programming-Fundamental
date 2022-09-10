@@ -4,7 +4,7 @@ int main()
 {
     char sentence[100];
     char ans[100][100];
-    scanf("%s", sentence);
+    scanf("%[^\n]s", sentence);
     for(int i = 0; i < strlen(sentence); i++)
     {
         for(int j = 0; j <= i; j++)
