@@ -2,7 +2,6 @@
 int main()
 {
     int n1, n2, n3, n=0;
-    int A[1], B[1], C[1];
     char abc[3];
     scanf("%d %d %d", &n1, &n2, &n3);
     scanf("%s", abc);
