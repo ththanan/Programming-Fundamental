@@ -1,44 +1,24 @@
 #include <stdio.h>
 int main()
 {
-    int num;
-    int num1, num2;
-    scanf("%d", &num);
-    num1 = num;
-    num2 = 2;
-    for (int i = 1; i <= num; i++)
+    int input;
+    scanf("%d", &input);
+    int num = input-1;
+    for(int y = num; y >= num * (-1); y--)
     {
-        for (int s = 1; s < i; s++)
+        for(int x = num * (-1); x <= num; x++)
         {
-            printf(" ");
-        }
-        for (int j = 1; j <= num1; j++)
-        {
-            printf("*");
-        }
-        for (int j = 1; j < num1; j++)
-        {
-            printf("*");
+            if((x <= y && x + y >= 0 )|| (x >= y && x + y <= 0))
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
         }
         printf("\n");
-        num1--;
     }
-    for (int i = num - 1; i >= 1; i--)
-    {
-        for (int s = 1; s < i; s++)
-        {
-            printf(" ");
-        }
-        for (int j = 1; j <= num2; j++)
-        {
-            printf("*");
-        }
-        for (int j = 1; j < num2; j++)
-        {
-            printf("*");
-        }
-        printf("\n");
-        num2++;
-    }
+ 
     return 0;
 }
